@@ -5,7 +5,8 @@ using ClassesAndObjects;
 
 
 
-Car audi = new Car("audi");
+Car audi = new Car("Audi A4",320);
+audi.Details();
 
 audi.Drive();
 

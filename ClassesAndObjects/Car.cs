@@ -8,22 +8,31 @@ namespace ClassesAndObjects
 {
     internal class Car
     {
-        private string name;
+        private string _name;
+        private int _hp;
+        private string _color;
 
-        public Car(string name)
+        public Car(string name, int hp = 0, string color = "White")
         {
-            this.name = name;
-            Console.WriteLine($"{this.name} was created");
+            _name = name;
+            Console.WriteLine($"{_name} was created");
+            _hp = hp;
+            _color = color;
         }
 
         public void Drive()
         {
-            Console.WriteLine($"{this.name} is Driving");
+            Console.WriteLine($"{_name} is Driving");
         }
 
         public void Stop()
         {
-            Console.WriteLine($"{this.name} is Stopped");
+            Console.WriteLine($"{_name} is Stopped");
+        }
+
+        public void Details()
+        {
+            Console.WriteLine($"The {_color} {_name} has {_hp} Horsepower");
         }
     }
 }
