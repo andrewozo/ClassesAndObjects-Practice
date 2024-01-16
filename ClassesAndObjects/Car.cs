@@ -12,6 +12,13 @@ namespace ClassesAndObjects
         private int _hp;
         private string _color;
 
+        public Car()
+        {
+            _name = "Car";
+            _hp = 0;
+            _color = "red";
+        }
+
         public Car(string name, int hp = 0, string color = "White")
         {
             _name = name;

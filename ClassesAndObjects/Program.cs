@@ -6,6 +6,8 @@ using ClassesAndObjects;
 
 
 Car audi = new Car("Audi A4",320);
+Car myCar = new Car();
+myCar.Details();
 audi.Details();
 
 audi.Drive();
