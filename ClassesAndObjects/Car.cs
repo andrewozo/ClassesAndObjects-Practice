@@ -8,9 +8,20 @@ namespace ClassesAndObjects
 {
     internal class Car
     {
+
+        // private member variables/fields
         private string _name;
         private int _hp;
         private string _color;
+
+        // public property
+        public string Name
+        {
+            get { return _name;} // get accessor
+            set { _name = value; } // set accessor
+        }
+
+        public int MaxSpeed { get; set; }
 
         public Car()
         {
@@ -25,21 +36,6 @@ namespace ClassesAndObjects
             Console.WriteLine($"{_name} was created");
             _hp = hp;
             _color = color;
-        }
-
-        public void SetName(string name)
-        {
-            _name = name == "" ? "DefaultName" : name;
-        }
-
-        public string GetName()
-        {
-            return _name;
-        }
-
-        public int GetHp()
-        {
-            return _hp;
         }
 
         public void Drive()

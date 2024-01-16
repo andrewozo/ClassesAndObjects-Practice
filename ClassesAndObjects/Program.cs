@@ -5,17 +5,10 @@ using ClassesAndObjects;
 
 
 
-Car audi = new Car("Audi A4",320);
 Car myCar = new Car();
+Console.WriteLine(myCar.Name);
+myCar.Name = "Audi A3";
 myCar.Details();
-audi.Details();
+myCar.MaxSpeed = 180;
+Console.WriteLine(myCar.MaxSpeed);
 
-audi.Drive();
-
-Console.WriteLine("Press 1 to stop the car");
-string? userInput = Console.ReadLine();
-
-if (userInput == "1")
-{
-    audi.Stop();
-}
