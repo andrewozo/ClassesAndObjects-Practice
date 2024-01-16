@@ -27,6 +27,21 @@ namespace ClassesAndObjects
             _color = color;
         }
 
+        public void SetName(string name)
+        {
+            _name = name == "" ? "DefaultName" : name;
+        }
+
+        public string GetName()
+        {
+            return _name;
+        }
+
+        public int GetHp()
+        {
+            return _hp;
+        }
+
         public void Drive()
         {
             Console.WriteLine($"{_name} is Driving");
