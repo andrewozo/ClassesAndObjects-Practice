@@ -12,3 +12,6 @@ myCar.Details();
 myCar.MaxSpeed = 180;
 Console.WriteLine(myCar.MaxSpeed);
 
+Members member1 = new Members();
+member1.Introducing(true);
+
